@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Основной контент (заголовок + фрейм) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top">
+
+        <!-- Контейнер для кнопок слева -->
+        <ImageView
+            android:id="@+id/logoutImageView"
+            android:layout_marginTop="3dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logout"
+            app:tint="@color/dark_red"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/dutyplansImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/hamburger"
+            app:tint="@color/darkest_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Существующий контейнер правых иконок (карандаш и галочка) -->
+        <LinearLayout
+            android:id="@+id/rightIconsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/editImageView"
+                android:layout_marginTop="3dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/pen_edit"
+                app:tint="@color/darkest_gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <ImageView
+                android:id="@+id/submitImageView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/check_circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                android:layout_marginTop="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout для текста (ниже по центру) -->
+    <LinearLayout
+        android:id="@+id/mainHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center"> <!-- Центрируем содержимое по горизонтали -->
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Апрель 2025"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/darkest_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentСont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainHeaderLayout"
+        android:layout_above="@id/bottom_nav" />
+
+    <!-- Панель навигации (всегда внизу) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:background="@color/lightest_gray"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView.Inactive"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemRippleColor="@null"
+        app:itemBackground="@drawable/custom_ripple"/>
+</RelativeLayout>

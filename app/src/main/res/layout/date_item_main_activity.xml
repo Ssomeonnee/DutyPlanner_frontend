@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_text1"
+    android:layout_width="50dp"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:text="1"
+    android:background="@drawable/date_item_dg"
+    android:textSize="14sp"
+    android:fontFamily="sans-serif"
+    android:textColor="@color/darkest_gray"/>

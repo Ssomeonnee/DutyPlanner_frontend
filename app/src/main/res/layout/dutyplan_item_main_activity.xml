@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textTextView"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="1"
+    android:inputType="text"
+    android:imeOptions="actionDone"
+    android:background="@drawable/dutyplan_default_cell_bg"
+    android:textSize="14sp"
+    android:fontFamily="sans-serif"
+    android:textColor="@color/darkest_gray"
+    tools:ignore="TextViewEdits" />

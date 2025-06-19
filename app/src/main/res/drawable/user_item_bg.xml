@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gray" /> <!-- Фон TextView -->
+        </shape>
+    </item>
+
+    <item android:bottom="1dp">  <!-- Отрегулируйте значение в зависимости от высоты TextView -->
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="@color/light_blue" /> <!-- Цвет разделителя -->
+        </shape>
+    </item>
+</layer-list>

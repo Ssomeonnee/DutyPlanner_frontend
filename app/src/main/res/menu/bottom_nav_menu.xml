@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_users"
+        android:title="Сотрудники"
+        android:icon="@android:color/transparent" /> <!-- Прозрачная иконка для ВСЕХ пунктов -->
+
+    <item
+        android:id="@+id/nav_dutyplans"
+        android:title="Графики"
+        android:icon="@android:color/transparent"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/nav_places"
+        android:title="Места"
+        android:icon="@android:color/transparent" />
+</menu>

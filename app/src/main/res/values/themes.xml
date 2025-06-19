@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Основные цвета -->
+        <item name="colorPrimary">@color/blue</item> <!-- ActionBar/Toolbar, кнопки, выделенные элементы -->
+        <item name="colorPrimaryDark">@color/blue</item> <!-- Статус-бар (если не переопределён statusBarColor) -->
+        <item name="colorAccent">@color/blue</item> <!-- CheckBox, RadioButton, Switch, EditText курсор -->
+        <!-- Цвет курсора EditText -->
+        <item name="colorControlActivated">@color/blue</item>
+
+        <!-- Статус-бар -->
+        <item name="android:statusBarColor">#FAFAFA</item> <!-- Цвет фона статус-бара - Переопределяет colorPrimaryDark -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Включить темный текст и иконки, если фон светлый-->
+
+        <!-- Навигационная панель -->
+        <item name="android:navigationBarColor">#FAFAFA</item> <!-- Цвет фона навигационной панел -->
+        <!-- <item name="android:windowLightNavigationBar">true</item> Темный стиль иконок --> -->
+
+        <item name="android:windowAnimationStyle">@null</item>
+
+    </style>
+
+    <style name="Theme.MyApplication.FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/lightest_gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item> <!-- Изменили на false -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">#FAFAFA</item> <!-- Используйте тот же цвет, что и фон -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Для тёмных иконок -->
+        <item name="android:navigationBarColor">@color/lightest_gray</item>
+        <!-- Важные параметры для растягивания -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Цвет курсора EditText -->
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+</resources>

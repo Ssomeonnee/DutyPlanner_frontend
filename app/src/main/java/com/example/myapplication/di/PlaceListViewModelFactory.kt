@@ -3,7 +3,7 @@ package com.example.myapplication.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.data.repository.DutyPlaceRepository
-import com.example.myapplication.viewmodel.PlaceListViewModel
+import com.example.myapplication.ui.viewmodel.PlaceListViewModel
 
 class PlaceListViewModelFactory(
     private val placeRepository: DutyPlaceRepository

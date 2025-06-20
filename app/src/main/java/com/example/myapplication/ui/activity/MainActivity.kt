@@ -17,7 +17,7 @@ import com.example.myapplication.data.repository.UserRepository
 import com.example.myapplication.di.CurrentDutyPlanViewModelFactory
 import com.example.myapplication.ui.fragment.CurrentDutyPlanFragment
 import com.example.myapplication.ui.fragment.DeleteDialogFragment
-import com.example.myapplication.viewmodel.CurrentDutyPlanViewModel
+import com.example.myapplication.ui.viewmodel.CurrentDutyPlanViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 

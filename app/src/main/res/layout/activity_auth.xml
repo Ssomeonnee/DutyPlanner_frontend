@@ -114,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Введите логин"
-                    android:inputType="text"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/darkest_gray"
                     android:textSize="16sp"
                     android:background="@null"

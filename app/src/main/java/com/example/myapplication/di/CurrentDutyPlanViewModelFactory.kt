@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.data.repository.DutyPlaceRepository
 import com.example.myapplication.data.repository.DutyPlanRepository
 import com.example.myapplication.data.repository.UserRepository
-import com.example.myapplication.viewmodel.CurrentDutyPlanViewModel
+import com.example.myapplication.ui.viewmodel.CurrentDutyPlanViewModel
 
 class CurrentDutyPlanViewModelFactory(
     private val planRepository: DutyPlanRepository,

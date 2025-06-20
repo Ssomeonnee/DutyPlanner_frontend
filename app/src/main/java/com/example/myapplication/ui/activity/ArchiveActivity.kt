@@ -2,22 +2,17 @@ package com.example.myapplication.ui.activity
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
-import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
 import com.example.myapplication.data.repository.DutyPlanRepository
 import com.example.myapplication.databinding.ActivityArchiveBinding
-import com.example.myapplication.viewmodel.ArchiveViewModel
+import com.example.myapplication.ui.viewmodel.ArchiveViewModel
 import androidx.lifecycle.lifecycleScope
-import com.example.myapplication.data.model.DutyPlace
-import com.example.myapplication.data.model.DutyPlan
 import com.example.myapplication.data.model.DutyPlanResponse
 import com.example.myapplication.di.ArchiveListViewModelFactory
-import com.example.myapplication.ui.activity.PlaceListActivity
 import com.example.myapplication.ui.adapter.ArchiveListAdapter
 import com.example.myapplication.ui.fragment.ArchiveDutyPlanFragment
 import com.example.myapplication.utils.ToastUtil
@@ -76,8 +71,14 @@ class ArchiveActivity : AppCompatActivity() {
         listAdapter = ArchiveListAdapter(
             onItemClick = { position, plan ->
                 showDutyPlanFragment(plan)
-                val adapter = ArrayAdapter(this, R.layout.spinner_item, plan.dutyPlaces.map { it.getSpinnerName() })
-                binding.filterSpinner.adapter = adapter
+                if (plan.dutyPlaces.isNotEmpty()) {
+                    val adapter = ArrayAdapter(
+                        this,
+                        R.layout.spinner_item,
+                        plan.dutyPlaces.map { it.getSpinnerName() })
+                    binding.filterSpinner.adapter = adapter
+                    binding.filterSpinner.visibility = View.VISIBLE
+                }
             }
         )
 
@@ -116,7 +117,7 @@ class ArchiveActivity : AppCompatActivity() {
         binding.fragmentContainer.visibility = View.VISIBLE
         isShowingFragment = true
         binding.listTitleTextView.text = plan.getTitle()
-        binding.filterSpinner.visibility = View.VISIBLE
+        //binding.filterSpinner.visibility = View.VISIBLE
     }
 
     private fun hideDutyPlanFragment() {

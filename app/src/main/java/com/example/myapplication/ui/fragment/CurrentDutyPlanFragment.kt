@@ -14,9 +14,8 @@ import com.example.myapplication.di.CurrentDutyPlanViewModelFactory
 import com.example.myapplication.ui.adapter.DatesAdapter
 import com.example.myapplication.ui.adapter.EditableDutyPlanAdapter
 import com.example.myapplication.ui.adapter.UsersAdapter
-import com.example.myapplication.viewmodel.CurrentDutyPlanViewModel
+import com.example.myapplication.ui.viewmodel.CurrentDutyPlanViewModel
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.launch
 
 class CurrentDutyPlanFragment : BaseDutyPlanFragment<CurrentDutyPlanViewModel>() {

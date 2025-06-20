@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
 
-    private val BASE_URL = "http://192.168.209.127:9000/"
+    private val BASE_URL = "http://192.168.127.127:9000/"
     //private val BASE_URL = "http://192.168.81.127:8000/"
 
     // Базовый API для неаутентифицированных запросов (логин/регистрация)

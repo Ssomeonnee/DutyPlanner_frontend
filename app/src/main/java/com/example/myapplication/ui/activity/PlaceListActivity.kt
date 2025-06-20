@@ -13,7 +13,7 @@ import com.example.myapplication.di.PlaceListViewModelFactory
 import com.example.myapplication.ui.adapter.PlaceListAdapter
 import com.example.myapplication.ui.fragment.PlacesInfoFragment
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.PlaceListViewModel
+import com.example.myapplication.ui.viewmodel.PlaceListViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kotlin.getValue

@@ -3,7 +3,7 @@ package com.example.myapplication.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.data.repository.DutyPlanRepository
-import com.example.myapplication.viewmodel.ArchiveViewModel
+import com.example.myapplication.ui.viewmodel.ArchiveViewModel
 
 class ArchiveListViewModelFactory(
     private val planRepository: DutyPlanRepository

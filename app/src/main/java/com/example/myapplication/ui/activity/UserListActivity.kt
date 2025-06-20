@@ -7,15 +7,13 @@ import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.myapplication.R
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplication.data.model.DutyPlace
 import com.example.myapplication.data.model.User
 import com.example.myapplication.data.repository.UserRepository
 import com.example.myapplication.di.UserListViewModelFactory
-import com.example.myapplication.ui.activity.PlaceListActivity
 import com.example.myapplication.ui.adapter.UserListAdapter
 import com.example.myapplication.ui.fragment.UsersInfoFragment
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.UserListViewModel
+import com.example.myapplication.ui.viewmodel.UserListViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 

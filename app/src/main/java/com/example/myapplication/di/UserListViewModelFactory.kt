@@ -3,7 +3,7 @@ package com.example.myapplication.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.data.repository.UserRepository
-import com.example.myapplication.viewmodel.UserListViewModel
+import com.example.myapplication.ui.viewmodel.UserListViewModel
 
 class UserListViewModelFactory(
     private val userRepository: UserRepository

@@ -8,11 +8,10 @@ import androidx.core.content.ContextCompat
 import com.example.myapplication.R
 import android.view.View
 import androidx.activity.viewModels
-import com.example.myapplication.viewmodel.AuthViewModel
+import com.example.myapplication.ui.viewmodel.AuthViewModel
 import com.example.myapplication.di.AuthViewModelFactory
-import com.example.myapplication.ui.activity.UserListActivity
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.AuthViewModel.AuthState
+import com.example.myapplication.ui.viewmodel.AuthViewModel.AuthState
 
 class AuthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAuthBinding

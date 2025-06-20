@@ -17,7 +17,7 @@ import com.example.myapplication.data.repository.DutyPlaceRepository
 import com.example.myapplication.databinding.FragmentPlacesInfoBinding
 import com.example.myapplication.di.PlacesInfoViewModelFactory
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.PlacesInfoViewModel
+import com.example.myapplication.ui.viewmodel.PlacesInfoViewModel
 import kotlinx.coroutines.launch
 import kotlin.getValue
 import android.text.TextWatcher

@@ -9,7 +9,7 @@ import com.example.myapplication.data.model.DutyPlanResponse
 import com.example.myapplication.ui.adapter.DatesAdapter
 import com.example.myapplication.ui.adapter.DutyPlanAdapter
 import com.example.myapplication.ui.adapter.UsersAdapter
-import com.example.myapplication.viewmodel.ArchiveDutyPlanViewModel
+import com.example.myapplication.ui.viewmodel.ArchiveDutyPlanViewModel
 
 class ArchiveDutyPlanFragment : BaseDutyPlanFragment<ArchiveDutyPlanViewModel>() {
     override val viewModel: ArchiveDutyPlanViewModel by viewModels()

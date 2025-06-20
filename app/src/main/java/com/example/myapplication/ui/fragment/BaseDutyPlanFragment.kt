@@ -8,9 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.FragmentDutyPlanBinding
-import com.example.myapplication.ui.activity.PlaceListActivity
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.BaseDutyPlanViewModel
+import com.example.myapplication.ui.viewmodel.BaseDutyPlanViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 

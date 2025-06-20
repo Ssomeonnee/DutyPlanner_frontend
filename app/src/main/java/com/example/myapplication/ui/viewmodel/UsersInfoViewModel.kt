@@ -1,24 +1,15 @@
-package com.example.myapplication.viewmodel
+package com.example.myapplication.ui.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.data.model.User
 import com.example.myapplication.data.repository.UserRepository
-import com.example.myapplication.event.DataChangeEventBus
-import com.example.myapplication.viewmodel.AuthViewModel.AuthState
-import kotlinx.coroutines.NonCancellable
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import retrofit2.HttpException
-import java.io.IOException
-import org.json.JSONObject
 
 class UsersInfoViewModel(
     private val userRepository: UserRepository

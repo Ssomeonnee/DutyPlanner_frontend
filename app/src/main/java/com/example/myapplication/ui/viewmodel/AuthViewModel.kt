@@ -1,4 +1,4 @@
-package com.example.myapplication.viewmodel
+package com.example.myapplication.ui.viewmodel
 
 import android.app.Application
 import android.content.Context
@@ -31,7 +31,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     fun login(login: String, password: String, isAdmin: Boolean) {
         if (login.isEmpty() || password.isEmpty()) {
             //_error.value ="Все поля долдны быть заполнены"
-            _authState.value = AuthState.Error("Все поля долдны быть заполнены")
+            _authState.value = AuthState.Error("Все поля должны быть заполнены")
             return
         }
 

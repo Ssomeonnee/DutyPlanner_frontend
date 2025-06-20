@@ -14,11 +14,10 @@ import androidx.lifecycle.lifecycleScope
 import com.example.myapplication.data.model.User
 import com.example.myapplication.data.repository.UserRepository
 import com.example.myapplication.databinding.FragmentUsersInfoBinding
-import com.example.myapplication.viewmodel.UsersInfoViewModel
+import com.example.myapplication.ui.viewmodel.UsersInfoViewModel
 import com.example.myapplication.di.UsersInfoViewModelFactory
 import com.example.myapplication.utils.ToastUtil
-import com.example.myapplication.viewmodel.AuthViewModel.AuthState
-import com.example.myapplication.viewmodel.UsersInfoViewModel.UiState
+import com.example.myapplication.ui.viewmodel.UsersInfoViewModel.UiState
 import kotlinx.coroutines.launch
 
 class UsersInfoFragment : DialogFragment() {

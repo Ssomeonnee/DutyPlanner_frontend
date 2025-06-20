@@ -1,4 +1,4 @@
-package com.example.myapplication.viewmodel
+package com.example.myapplication.ui.viewmodel
 
 import android.os.Bundle
 import android.util.Log

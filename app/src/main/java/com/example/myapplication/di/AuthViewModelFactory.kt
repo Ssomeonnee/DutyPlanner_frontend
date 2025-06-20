@@ -3,7 +3,7 @@ package com.example.myapplication.di
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.viewmodel.AuthViewModel
+import com.example.myapplication.ui.viewmodel.AuthViewModel
 
 class AuthViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
